@@ -1,4 +1,3 @@
-package observer;
 
 interface Observer {
     void setSubject(Subject s);
