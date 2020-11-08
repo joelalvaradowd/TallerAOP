@@ -1,15 +1,13 @@
-import java.awt.BorderLayout;
+package observer;
+
 import java.awt.Color;
-import java.awt.Component;
-import java.awt.Frame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 
 class Button extends java.awt.Button {
 
-    static final Color  defaultBackgroundColor = Color.gray;
+	private static final long serialVersionUID = -6372448150200545733L;
+	static final Color  defaultBackgroundColor = Color.gray;
     static final Color  defaultForegroundColor = Color.black;
     static final String defaultText = "ClickMe";
     private int counter=0;
@@ -29,7 +27,6 @@ class Button extends java.awt.Button {
     }
 
     public void click() {
-    	this.getParent().setBackground(this.getBackground());
     	counter();
     }
     
@@ -38,4 +35,4 @@ class Button extends java.awt.Button {
     	this.setLabel(Integer.toString(counter));
     }
     
-    }
+}
