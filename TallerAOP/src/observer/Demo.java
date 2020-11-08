@@ -12,6 +12,9 @@ public class Demo {
         Button b1 = new Button(display);
         Button b2 = new Button(display);
         Button b3 = new Button(display);
+        b1.setBackground(Color.red);
+        b2.setBackground(Color.green);
+        b3.setBackground(Color.blue);
         b1.addActionListener(new ActionListener(){  
         	public void actionPerformed(ActionEvent e){  
         		pintarRojo();
